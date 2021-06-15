@@ -59,10 +59,9 @@ class MainPageViewModel: MainPageViewModelType {
     
     
     func searchBarSearchButtonClicked(for searchText: String) {
-
         var arrayForPrinting = [CompanyProfile]()
 
-        companies.forEach { (company) in
+        fullCompaniesList.forEach { (company) in
 
             let searchByName = company.companyName.lowercased().contains(searchText)
             let searchByTicker = company.symbol.lowercased().contains(searchText)
@@ -70,6 +69,7 @@ class MainPageViewModel: MainPageViewModelType {
             if searchByName || searchByTicker{
                 arrayForPrinting.append(company)
             }
+			
             companies = arrayForPrinting
 
         }
