@@ -1,5 +1,5 @@
 
-import Foundation
+import UIKit
 
 protocol StockCellViewModelType {
     
@@ -14,4 +14,6 @@ protocol StockCellViewModelType {
     var imageURL: URL {get}
     
     var isFavoriteImage: String {get}
+	
+	var textColor: UIColor {get}
 }

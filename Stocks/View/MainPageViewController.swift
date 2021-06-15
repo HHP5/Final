@@ -77,7 +77,6 @@ class MainPageViewController: UIViewController{
         segment.setTitle("STOCKS", forSegmentAt: 0)
         segment.setTitle("FAVORITES", forSegmentAt: 1)
         
-        
     }
     
     private func setTableView() {

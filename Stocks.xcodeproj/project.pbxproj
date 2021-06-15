@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,6 @@
 		49CF697426135048009C61B8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF696F26135048009C61B8 /* Router.swift */; };
 		49CF697526135048009C61B8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF697026135048009C61B8 /* Network.swift */; };
 		49CF697626135048009C61B8 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF697126135048009C61B8 /* HTTPStatusCode.swift */; };
-		49CF697726135048009C61B8 /* HandleHTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF697226135048009C61B8 /* HandleHTTPStatusCode.swift */; };
 		49CF697826135048009C61B8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF697326135048009C61B8 /* NetworkError.swift */; };
 		49CF697D2613505D009C61B8 /* CompanyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF697A2613505D009C61B8 /* CompanyProfile.swift */; };
 		49CF697E2613505D009C61B8 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF697B2613505D009C61B8 /* Company.swift */; };
@@ -25,6 +24,7 @@
 		49CF698426135065009C61B8 /* StockCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF698226135065009C61B8 /* StockCellViewModel.swift */; };
 		49CF69882613506B009C61B8 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF69862613506B009C61B8 /* MainPageViewController.swift */; };
 		49CF69892613506B009C61B8 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF69872613506B009C61B8 /* StockCell.swift */; };
+		49FE739726788B80005A84A2 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE739626788B80005A84A2 /* APIKey.swift */; };
 		944064B206E77ACE121FBC45 /* Pods_Stocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F2CDC61F9E0B2F104627E4 /* Pods_Stocks.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,6 @@
 		49CF696F26135048009C61B8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		49CF697026135048009C61B8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		49CF697126135048009C61B8 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		49CF697226135048009C61B8 /* HandleHTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleHTTPStatusCode.swift; sourceTree = "<group>"; };
 		49CF697326135048009C61B8 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		49CF697A2613505D009C61B8 /* CompanyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyProfile.swift; sourceTree = "<group>"; };
 		49CF697B2613505D009C61B8 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		49CF698226135065009C61B8 /* StockCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCellViewModel.swift; sourceTree = "<group>"; };
 		49CF69862613506B009C61B8 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		49CF69872613506B009C61B8 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		49FE739626788B80005A84A2 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		6EF840678AB147728598EBB4 /* Pods-Stocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.release.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.release.xcconfig"; sourceTree = "<group>"; };
 		C7F2CDC61F9E0B2F104627E4 /* Pods_Stocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				49CF697C2613505D009C61B8 /* AlertService.swift */,
+				49FE739626788B80005A84A2 /* APIKey.swift */,
 				49CF697B2613505D009C61B8 /* Company.swift */,
 				49CF697A2613505D009C61B8 /* CompanyProfile.swift */,
 			);
@@ -123,7 +124,6 @@
 		49CF696626135015009C61B8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				49CF697226135048009C61B8 /* HandleHTTPStatusCode.swift */,
 				49CF697126135048009C61B8 /* HTTPStatusCode.swift */,
 				49CF697026135048009C61B8 /* Network.swift */,
 				49CF697326135048009C61B8 /* NetworkError.swift */,
@@ -156,7 +156,6 @@
 				46AF70F6B0E9B847C2F6D366 /* Pods-Stocks.debug.xcconfig */,
 				6EF840678AB147728598EBB4 /* Pods-Stocks.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -281,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49CF697726135048009C61B8 /* HandleHTTPStatusCode.swift in Sources */,
 				49CF697D2613505D009C61B8 /* CompanyProfile.swift in Sources */,
 				49CF698326135065009C61B8 /* MainPageViewModel.swift in Sources */,
 				49CF698426135065009C61B8 /* StockCellViewModel.swift in Sources */,
@@ -292,6 +290,7 @@
 				49CF696C2613503F009C61B8 /* MainPageViewModelType.swift in Sources */,
 				49CF697E2613505D009C61B8 /* Company.swift in Sources */,
 				49CF69882613506B009C61B8 /* MainPageViewController.swift in Sources */,
+				49FE739726788B80005A84A2 /* APIKey.swift in Sources */,
 				49CF697826135048009C61B8 /* NetworkError.swift in Sources */,
 				49CF694E26134FC5009C61B8 /* SceneDelegate.swift in Sources */,
 				49CF697F2613505D009C61B8 /* AlertService.swift in Sources */,

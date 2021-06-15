@@ -1,4 +1,5 @@
 .DS_Store
 Podfile.lock
+APIKey.swift
 Stocks.xcworkspace
 Pods

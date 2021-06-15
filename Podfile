@@ -7,5 +7,7 @@ target 'Stocks' do
 
   # Pods for Stocks
   pod 'Kingfisher', '~> 6.0'
+  pod 'SnapKit', '~> 5.0.0'
+
 
 end
