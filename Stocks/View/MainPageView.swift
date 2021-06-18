@@ -1,9 +1,3 @@
-//
-//  MainPageView.swift
-//  Stocks
-//
-//  Created by Екатерина Григорьева on 15.06.2021.
-//
 
 import UIKit
 import SnapKit
@@ -40,7 +34,7 @@ class MainPageView: UIView, IMainPageView {
 		tableView.snp.makeConstraints { make in
 			make.edges.equalToSuperview()
 		}
-		tableView.register(StockCell.self, forCellReuseIdentifier: StockCell.identifier )
+		tableView.register(TableCell.self, forCellReuseIdentifier: TableCell.identifier )
 		tableView.rowHeight = 100
 		
 		tableView.allowsSelection = false

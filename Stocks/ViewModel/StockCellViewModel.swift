@@ -39,10 +39,5 @@ class StockCellViewModel: StockCellViewModelType {
         guard let imageURL = profile.imageURL?.url else { return emptyPicture! }
         return imageURL
     }
-
-    var isFavoriteImage: String {
-        return profile.isFavorite! ? "heart.fill" : "heart"
-    }
-
     
 }

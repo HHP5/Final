@@ -11,7 +11,6 @@ struct CompanyProfile: Codable {
     var changePercent: Double
     
     var imageURL: Logo?
-    var isFavorite: Bool?
 }
 
 

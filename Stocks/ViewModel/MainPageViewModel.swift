@@ -5,8 +5,13 @@ class MainPageViewModel: MainPageViewModelType {
         
     private var fullCompaniesList = [CompanyProfile]()
     private var companies = [CompanyProfile]()
-    
-    func fetchCompanyProfile(completion: @escaping(NetworkError?)->()){
+	var favorite: FavouriteCompanyModel
+	
+	init(user: UserModel) {
+		self.favorite = FavouriteCompanyModel(user: user)
+	}
+
+    func fetchCompanyProfile(completion: @escaping(NetworkError?)->()) {
         
         Tikers.symbols.forEach { (symbol) in
             
@@ -32,14 +37,11 @@ class MainPageViewModel: MainPageViewModelType {
                         case .success(let url):
                             
                             profile.imageURL = url
-                            profile.isFavorite = false
                             self?.fullCompaniesList.append(profile)
                             self?.companies = self!.fullCompaniesList
-                            
-                            
+
                             if self?.fullCompaniesList.count == Tikers.symbols.count{
-                                
-                                completion(nil)
+								completion(nil)
                             }
                         }
                     }
@@ -81,10 +83,9 @@ class MainPageViewModel: MainPageViewModelType {
 
     }
     
-    func favoriteButtonPressed(at index: Int){
-        companies[index].isFavorite = !companies[index].isFavorite!
+    func favoriteButtonPressed(at index: Int) {
+		
+		favorite.save(model: companies[index])
     }
-    
-    
     
 }

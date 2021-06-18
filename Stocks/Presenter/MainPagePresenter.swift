@@ -1,9 +1,3 @@
-//
-//  MainPagePresenter.swift
-//  Stocks
-//
-//  Created by Екатерина Григорьева on 15.06.2021.
-//
 
 import UIKit
 
@@ -13,7 +7,7 @@ protocol IMainPagePresenter {
 	func didLoad(view: IMainPageView)
 	func table() -> UITableView?
 	func searchBar() -> UISearchBar?
-	func cell(_ tableView: UITableView, for indexPath: IndexPath)  -> StockCell
+	func cell(_ tableView: UITableView, for indexPath: IndexPath)  -> TableCell
 	func configuration(_ tableView: UITableView, for indexPath: IndexPath) -> UISwipeActionsConfiguration?
 	func textDidChange(for searchText: String?)
 	func searchBarSearchButtonClicked()
@@ -69,8 +63,8 @@ class MainPagePresenter: IMainPagePresenter {
 		return screenView?.searchBar
 	}
 	
-	func cell(_ tableView: UITableView, for indexPath: IndexPath)  -> StockCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: StockCell.identifier, for: indexPath) as! StockCell
+	func cell(_ tableView: UITableView, for indexPath: IndexPath)  -> TableCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: TableCell.identifier, for: indexPath) as! TableCell
 		let cellViewModel = viewModel.stockCellViewModel(forIndexPath: indexPath)
 		cell.cellModel = cellViewModel
 		return cell

@@ -12,8 +12,6 @@ protocol StockCellViewModelType {
     var priceChange : String {get}
     
     var imageURL: URL {get}
-    
-    var isFavoriteImage: String {get}
-	
+    	
 	var textColor: UIColor {get}
 }

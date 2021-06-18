@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Stocks
-//
-//  Created by Екатерина Григорьева on 30.03.2021.
-//
 
 import UIKit
 
@@ -22,8 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window.overrideUserInterfaceStyle = .light
 		
-		let router = MainRouter()
-		window.rootViewController = router.returnController()
+		let router = LoginScreenAssembly().build()
+		window.rootViewController = router
 		window.makeKeyAndVisible()
 		self.window = window
         
@@ -55,6 +49,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+		(UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
